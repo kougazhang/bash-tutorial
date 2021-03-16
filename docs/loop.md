@@ -61,6 +61,19 @@ $ while true; false; do echo 'Hi, looping ...'; done
 
 上面代码运行后，不会有任何输出，因为`while`的最后一个命令是`false`。
 
+### 笔记
+
++ `while` 不支持以下形式:
+
+```shell
+i=0
+while true
+do
+// do something ...
+i++
+done
+```
+
 ## until 循环
 
 `until`循环与`while`循环恰好相反，只要不符合判断条件（判断条件失败），就不断循环执行指定的语句。一旦符合判断条件，就退出循环。
